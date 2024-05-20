@@ -1,0 +1,34 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div id="allblogscontainer" data-aos="fade-up" data-aos-delay="100">
+
+  <br>
+  <h1 id="allblogstitle" class="font-weight-bold text-center">Work Experience</h1>
+
+
+  {% for exp in experiences %}
+  <br><br>
+  <div class="row justify-content-center my-3">
+    <div class="col-md-10">
+
+      <a href="{% url 'experience:experience_detail' exp.id %}" id="jobtitle">
+        <h2 id="jobtitle"> {{ exp.companyname }}
+      </a>
+
+      <h4> {{ exp.title }}</h4>
+
+      {% if exp.enddate is not none %}
+      <h6 id='datedate'> {{ exp.startdate|date:'M Y' }} - {{ exp.enddate|date:'M Y' }}</h6>
+      {% else %}
+      <h6 id='datedate'>{{ exp.startdate|date:'M Y'}} - Present </h6>
+      {% endif %}
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

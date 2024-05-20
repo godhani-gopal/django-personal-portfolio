@@ -1,0 +1,330 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+<header id="header" class="d-flex flex-column justify-content-center">
+
+  <nav id="navbar" class="navbar nav-menu">
+    <ul>
+      <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+      <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+      <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+      <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+    </ul>
+  </nav>
+
+</header>
+
+
+<section id="hero" class="d-flex flex-column justify-content-center">
+  <div class="container" data-aos="zoom-in" data-aos-delay="100">
+    <h1>Gopal L Godhani</h1>
+
+    <p>I'm <span class="typed" data-typed-items="DevOps Consultant,  Freelancer, Developer, Animal Lover"></span></p>
+    <br>
+
+    <form action="{% static "portfolio/resume.pdf" %}">
+      <input id="resumebtn" type="submit" value="Download Resume" />
+    </form>
+
+  </div>
+</section>
+
+<main id="main">
+
+
+  <center>
+    <hr>
+  </center>
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Around eight years of experience comprising Linux Administrator and Software Configurations management with Expertise in the areas of Build and Release management, taking care of CI/CD pipeline, cloud solutions, and containerization.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="{% static 'portfolio/assets/img/gg.jpeg' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content">
+          <h3> DevOps Engineer</h3>
+          <p class="fst-italic">
+            Expertise in Cloud Automation, DevOps, SRE, and System Administrator
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>21 September 1996</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>javadev.pythonanywhere.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1-947-225-7676</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Michigan, USA</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master's</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>godhanigopal09@gmail.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <center>
+    <hr>
+  </center>
+  <section id="skills" class="skills section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+        <p>Always walk through life as if you have something new to learn, and you will.
+          - Vernon Howard</p>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">AWS <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Docker <i class="val">95%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Python <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">Java <i class="val">95%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Git and GitHub <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Go <i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="">
+          <br><br>
+          <strong>Other Skills: </strong> : R, Spring Boot, JPA, JDBC, RESTful APIs, Jenkins, Azure, JWT, Oracle SQL, Django, React, JavaScript, TypeScript, Maven, IBM Sterling
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <center>
+    <hr>
+  </center>
+
+  <section id="resume" class="resume">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>As a DevOps Engineer, I'm always up to learn more about the best and latest industry developments in the field. It is my intent to narrow my interest and deepen my knowledge in Enterprise Operations and gain global exposure.</p>
+      </div>
+
+      <div class="row">
+
+        <h3 class="resume-title">Summary</h3>
+        <div class="resume-item pb-0">
+          <h4>Gopal Godhani</h4>
+          <p><em>Focused on developing solutions to increase velocity, quality to build reliable software products. Extensive experience with Java, Amazon Web Services, Docker, Python and helping clients to use DevOps for the modern age.</em>
+          </p>
+          <ul>
+            <li>Michigan, USA</li>
+            <li>(947) 225 7676</li>
+            <li>godhanigopal09@gmail.com</li>
+          </ul>
+        </div>
+
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>Master of Computer & Information Science</h4>
+          <h5>2019 - 2021</h5>
+          <p><em>Cleveland State University</em></p>
+          <p>Learned the development of IS infrastructure to support the organization’s processes with a focus on Cloud Computing, Emerging Technologies, Advanced Network Security, System Thinking and Project Management along with best practices.
+          </p>
+        </div>
+        <div class="resume-item">
+          <h4>Bachelor of Computer Science</h4>
+          <h5>2015 - 2019</h5>
+          <p><em>Cleveland State University, Cleveland, OH</em></p>
+          <p>Learned practical and theoretical capabilities of computing, including problem solving and algorithms with programming, database development, networks, security, and system administration at the center.</p>
+        </div>
+
+
+        <h3 class="resume-title">Professional Experience</h3>
+        <div class="resume-item">
+          <h4>Software Engineer</h4>
+          <h5>Oct 2021 - Present</h5>
+          <p><em>Novi, MI</em></p>
+
+          <ul>
+            <li>Contributed to the development of APIs for a portal focusing on monitoring the health and performance of the data movement infrastructure, using Java, Spring Boot, JPA, and JDBC in an Agile environment.</li>
+            <a href="{% url 'experience:all_experience' %}" style="color:#6600ff">Read More <i class="bi bi-book-half"></i> </a>
+          </ul>
+        </div>
+        {% comment %} <div class="resume-item">
+          <h4>Cloud Automation / DevOps Engineer</h4>
+          <h5>Feb 2021 - Present</h5>
+          <p><em>Sherwin-Williams, Cleveland, OH</em></p>
+
+          <ul>
+            <li>Involved in designing and deploying a multitude of applications utilizing almost all the AWS stack</li>
+            <a href="{% url 'experience:all_experience' %}">Read More <i class="bi bi-book-half"></i> </a>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h4>DevOps / SRE Engineer</h4>
+          <h5>Aug 2019 - Jan 2021</h5>
+          <p><em>Humana Inc., Louisville, KY</em></p>
+          <ul>
+            <li>Developed and implemented Sofftware Release Management strategies for various applications according to the agile process.</li>
+            <a href="{% url 'experience:all_experience' %}">Read More <i class="bi bi-book-half"></i> </a>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h4>Build and Release Engineer</h4>
+          <h5>Jan 2017 - Jul 2019</h5>
+          <p><em>CUNA Mutual Group, Madison, WI </em></p>
+          <ul>
+            <li>Creation of Build and Release Plan, collection, analysis & presentation of Project Metrics weekly.</li>
+            <li> Developed and supported the Software Release Management and procedures</li>
+            <a href="{% url 'experience:all_experience' %}">Read More <i class="bi bi-book-half"></i> </a>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h4>System Engineer</h4>
+          <h5>Mar 2016 - Dec 2016</h5>
+          <p><em>Cleveland Clinic, Cleveland, OH </em></p>
+          <ul>
+            <li>Design and manage composite systems over their life cycles.</li>
+            <li>Monitoring and managing all installed systems and infrastructure</li>
+            <a href="{% url 'experience:all_experience' %}">Read More <i class="bi bi-book-half"></i> </a>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h4>Linux Administrator</h4>
+          <h5>Apr 2014 - Feb 2016</h5>
+          <p><em>Cleveland Clinic, Cleveland, OH </em></p>
+          <ul>
+            <li>Proactively maintain and develop all Linux infrastructure technology to maintain a 24x7 uptime service</li>
+
+            <a href="{% url 'experience:all_experience' %}">Read More <i class="bi bi-book-half"></i> </a>
+          </ul>
+        </div> {% endcomment %}
+      </div>
+    </div>
+
+
+  </section>
+
+  <center>
+    <hr>
+  </center>
+  <section id="contact" class="contact">
+    <center>
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class=" mx-auto" style="width: 350px;">
+
+
+
+          <div class="info">
+            <div class="address" center>
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>Detroit, MI</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>godhanigopal09@gmail.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+1 (947) 225 7676</p>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </center>
+  </section>
+
+</main>
+<center>
+  <hr>
+</center>
+<footer id="footer">
+  <div class="container">
+    <p>“One of the best pieces of advice I ever got was from a horse master. He told me to go slow to go fast. I think that applies to everything in life. We live as though there aren't enough hours in the day but if we do each thing calmly and
+      carefully we will get it done quicker and with much less stress.”</p>
+    <p>- Viggo Mortensen</p>
+    <center>
+      <hr>
+    </center>
+    <h3>G. L. Godhani</h3>
+
+    <div class="social-links">
+      <a href="https://join.skype.com/invite/f5CyILSSrgr7" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="https://www.linkedin.com/in/gopal-g-61887421b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+{% endblock %}

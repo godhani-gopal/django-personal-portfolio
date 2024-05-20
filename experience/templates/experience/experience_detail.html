@@ -1,0 +1,33 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div id="allblogscontainer" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="container">
+    <a href="{% url 'experience:all_experience' %}" class="goback d-flex align-items-left justify-content-left" style="color:#6600ff"><i class="bi bi-arrow-left"></i> Go Back</a>
+
+    <h1 class="text-center mt-5" id="blogdetailtitle">{{ experience.title }}</h1>
+    <h5 class="text-center mt-5" style="color:#6600ff"><i class="bi bi-building"></i> {{ experience.companyname }}</h5>
+    <h6 class="text-center mb-5"><i class="bi bi-geo-alt-fill"></i> {{ experience.worklocation }}</h6>
+
+    {% if experience.enddate is not none %}
+    <h5 class="text-center text-muted mb-5"> {{ experience.startdate|date:'M Y' }} - {{ experience.enddate|date:'M Y' }}</h5>
+    {% else %}
+    <h5 class="text-center text-muted mb-5">{{ experience.startdate|date:'M Y' }} - Present </h5>
+    {% endif %}
+
+    <p><strong>About {{ experience.companyname }}:</strong></p>
+    <p style="color:#6c757d">{{ experience.companydescription }}</p>
+    <br>
+    <center>
+      <hr>
+    </center>
+    <p class="experience_detail">
+      {{ experience.jobdescription|safe }}
+    </p>
+
+  </div>
+</div>
+{% endblock %}
